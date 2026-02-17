@@ -35,7 +35,7 @@ export const Home = ({ tusks, setTusks }) => {
         sx={{
           fontWeight: "bold",
           color: "#1976d2",
-          fontSize: { xs: "2rem", md: "3rem" },
+          fontSize: { xs: "2rem", md: "3rem" }, 
         }}
       >
         Tusk Manager
@@ -46,7 +46,7 @@ export const Home = ({ tusks, setTusks }) => {
         sx={{ p: { xs: 2, sm: 3 }, mb: 4, borderRadius: 2, bgcolor: "#f5f5f5" }}
       >
         <Stack
-          direction={{ xs: "column", sm: "row" }}
+          direction={{ xs: "column", sm: "row" }} 
           spacing={2}
           justifyContent="space-between"
           alignItems="center"
