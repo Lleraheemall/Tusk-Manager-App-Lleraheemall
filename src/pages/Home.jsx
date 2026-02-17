@@ -25,7 +25,6 @@ export const Home = ({ tusks, setTusks }) => {
   } = useHomeTusks(tusks, setTusks);
 
   return (
-    // src/pages/Home.jsx
     <Container
       maxWidth="md"
       sx={{ mt: { xs: 2, md: 4 }, px: { xs: 1, sm: 2 } }}
@@ -36,7 +35,7 @@ export const Home = ({ tusks, setTusks }) => {
         sx={{
           fontWeight: "bold",
           color: "#1976d2",
-          fontSize: { xs: "2rem", md: "3rem" }, // Менший шрифт на мобілці
+          fontSize: { xs: "2rem", md: "3rem" },
         }}
       >
         Tusk Manager
@@ -47,7 +46,7 @@ export const Home = ({ tusks, setTusks }) => {
         sx={{ p: { xs: 2, sm: 3 }, mb: 4, borderRadius: 2, bgcolor: "#f5f5f5" }}
       >
         <Stack
-          direction={{ xs: "column", sm: "row" }} // Стовпчиком на мобілці
+          direction={{ xs: "column", sm: "row" }}
           spacing={2}
           justifyContent="space-between"
           alignItems="center"
@@ -64,7 +63,7 @@ export const Home = ({ tusks, setTusks }) => {
             variant="contained"
             component={Link}
             to="/new"
-            fullWidth={{ xs: true, sm: false }} // На всю ширину екрану
+            fullWidth={{ xs: true, sm: false }}
             startIcon={<AddIcon />}
             sx={{ borderRadius: 5 }}
           >
@@ -79,7 +78,7 @@ export const Home = ({ tusks, setTusks }) => {
           exclusive
           onChange={handleFilterChange}
           color="primary"
-          size="small" // Трохи менші кнопки для мобілок
+          size="small"
         >
           <ToggleButton value="all">All</ToggleButton>
           <ToggleButton value="active">Active</ToggleButton>
